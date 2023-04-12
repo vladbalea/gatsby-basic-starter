@@ -1,12 +1,12 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
- */
-
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
 module.exports = {
-  plugins: [],
+    siteMetadata: {
+        title: "Site Title",
+        description: "Site Description",
+        image: "",
+        url: "http://localhost:8000/",
+        icon: "",
+    },
+    plugins: [
+        "gatsby-plugin-postcss",
+    ],
 }
