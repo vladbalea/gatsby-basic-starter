@@ -10,6 +10,7 @@ export default function useSiteMetadata() {
                     image
                     url
                     icon
+                    language
                 }
             }
         }

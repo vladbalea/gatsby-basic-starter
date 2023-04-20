@@ -8,7 +8,8 @@ export default function Seo({ title, description, image, children }) {
         description: defaultDescription,
         image: defaultImage,
         url: defaultUrl,
-        icon
+        icon,
+        language,
     } = useSiteMetadata()
 
     const seo = {
@@ -20,6 +21,7 @@ export default function Seo({ title, description, image, children }) {
 
     return (
         <>
+            <html lang={language} />
             <title>{title ? `${title} - ${defaultTitle}` : defaultTitle}</title>
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
